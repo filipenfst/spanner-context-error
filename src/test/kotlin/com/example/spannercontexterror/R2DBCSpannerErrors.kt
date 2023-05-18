@@ -17,7 +17,7 @@ import reactor.core.publisher.Hooks
 import java.util.UUID
 
 
-class ContextPropagationTest(
+class R2DBCSpannerErrors(
     @Autowired
     private val contextTestCoroutineRepository: ContextTestRepository,
     @Autowired
