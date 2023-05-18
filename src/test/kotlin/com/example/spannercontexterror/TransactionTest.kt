@@ -65,7 +65,6 @@ class TransactionTest(
 
     @Test
     fun test(): Unit = runBlocking {
-        Hooks.disableContextLossTracking()
         val entities = (0 until 10).map { UUID.randomUUID() }.map {
             ContextTestEntity(
                 id = "id-$it",

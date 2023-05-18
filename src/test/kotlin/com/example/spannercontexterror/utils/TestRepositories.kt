@@ -13,10 +13,6 @@ import java.io.Serializable
 @Repository
 interface ContextTestRepository : CoroutineCrudRepository<ContextTestEntity, String>
 
-
-@Repository
-interface ContextTestReactiveRepository : ReactiveCrudRepository<ContextTestEntity, String>
-
 @Table("context_test_table")
 data class ContextTestEntity(
     @Id
